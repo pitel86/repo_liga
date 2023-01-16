@@ -43,3 +43,4 @@ app.use((error, req, res, next)=>{
     return res.status(500).json("Error: " + error.message || "Unexpected error");
 })
 app.listen(5000, () => console.log('listening on port 5000'));
+app.disable('x-powered-by');
